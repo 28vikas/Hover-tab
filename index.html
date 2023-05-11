@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="contain">
+
+            <div class="rightContent">
+                <h2 class="btn"  onmouseover="showCity(london, paris, tokyo)">London</h2>
+                <h2 class="btn"  onmouseover="showCity(paris,tokyo,london)">Paris</h2>
+                <h2 class="btn"  onmouseover="showCity(tokyo,paris, london)">Tokyo</h2>
+            </div>
+
+            <div class="leftContent">
+
+
+                <div class="tabContent" id="london">
+                    <h3>London</h3>
+                    <p>London is the capital city of England.</p>
+                </div>
+
+                <div class="tabContent" id="paris">
+                    <h3>Paris</h3>
+                    <p>Paris is the capital of France.</p>
+                </div>
+
+                <div class="tabContent" id="tokyo">
+                    <h3>Tokyo</h3>
+                    <p>Tokyo is the capital of Japan.</p>
+                </div>
+                
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <script>
+
+        function showCity(x,y,z){
+            x.style.display = "block"
+            y.style.display = "none"
+            z.style.display = "none"
+
+
+        }
+
+
+    </script>
+    
+</body>
+</html>
